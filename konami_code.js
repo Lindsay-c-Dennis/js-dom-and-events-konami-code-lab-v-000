@@ -4,7 +4,7 @@ function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', function(event) {
     if (event === code) {
-      
+      alert("Congratulations! You're a video game nerd!");
     }
   });
 }
