@@ -5,8 +5,17 @@ function init() {
   let i = 0;
   
   document.body.addEventListener('keydown', function(event) {
-    if (event === code) {
-      alert("Congratulations! You're a video game nerd!");
+    const key = parseInt(event.detail || event.which);
+    
+    if (key === code[i]) {
+      i++;
+      
+      if (i === code.length) {
+        alert("Congratulations, nerd!");
+      }
+    } else {
+      i = 0;
     }
-  });
+    }
+  );
 }
